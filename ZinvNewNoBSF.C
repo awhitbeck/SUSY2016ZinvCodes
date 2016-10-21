@@ -17,24 +17,24 @@ void ZinvNewNoBSF(){
 
 
      TChain* tZinv = new TChain("SimpleTree");
-     tZinv->Add("InputSkimZinv2016_V10.root");
+     tZinv->Add("/eos/uscms/store/user/bmahakud/SUSY2016Skim_V10/InputSkimZinv2016_V10.root");
      ReadTree Zinv(tZinv);
 
 
      TChain* tGJets = new TChain("SimpleTree");
-     tGJets->Add("InputSkimGJetsDR42016_V10.root");
+     tGJets->Add("/eos/uscms/store/user/bmahakud/SUSY2016Skim_V10/InputSkimGJetsDR42016_V10.root");
     
      ReadTree GJets(tGJets);
 
 
      TChain* tQCD = new TChain("SimpleTree");
-     tQCD->Add("InputSkimQCD2016_V10.root");
+     tQCD->Add("/eos/uscms/store/user/bmahakud/SUSY2016Skim_V10/InputSkimQCD2016_V10.root");
     
      ReadTree QCD(tQCD);
 
 
      TChain* tData = new TChain("SimpleTree");
-     tData->Add("InputSkimData2016_V10.root");//inputSkimData2016_V8_2p6.root");//InputSkimData2016.root");
+     tData->Add("/eos/uscms/store/user/bmahakud/SUSY2016Skim_V10/InputSkimData2016_V10.root");//inputSkimData2016_V8_2p6.root");//InputSkimData2016.root");
     
      ReadTree Data(tData);
 
