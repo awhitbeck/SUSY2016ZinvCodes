@@ -437,7 +437,7 @@ void ZinvNewNoBSF(){
   ///////////////////////////////////////////////////////////////////////////
 
 
-   int nBinAN=40;
+   nBinAN=40;
 
 
    int totalDataevents=0;
@@ -768,7 +768,7 @@ void ZinvNewNoBSF(){
      double GJetsMCEC_Wtd=h_NGJets40binEC_Wtd->GetBinContent(ibin);
 
 
-     double GJetsMC=GJetsMCEB+GJetsMCEC;
+    GJetsMC=GJetsMCEB+GJetsMCEC;
      double GJetsMCerr=sqrt((GJetsMCEBerr)*(GJetsMCEBerr)+(GJetsMCECerr)*(GJetsMCECerr));
 
      totalGJetsMCevents=totalGJetsMCevents+h_NGJets40bin->GetBinContent(ibin);
